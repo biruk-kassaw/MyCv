@@ -30,14 +30,36 @@ body {
 div#topImageContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 15px;
 }
 
 div#topImageContainer .image img {
-  width: 500px;
+  width: 400px;
 }
 
 #headerInJumbo {
-  color: darkblue;
+  color: rgb(70, 70, 77);
   font-size: 70px;
+}
+#sideNotes {
+  margin-left: 10px;
+  color: rgb(70, 70, 77);
+}
+
+#sideNotes h3 {
+  color: brown;
+}
+
+#sideNotes p {
+  line-height: 1.6;
+}
+
+#containerOfHobyAndExp div {
+  border-top: 1px solid rgb(70, 70, 77);
+}
+
+#containerOfHobyAndExp h3 {
+  color: brown;
+  padding-left: 30px;
 }
