@@ -1,0 +1,13 @@
+#myWorks a {
+  background-color: #564caf;
+  color: white;
+  padding: 14px 20px;
+  margin: 100px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#myWorks div {
+  margin-bottom: 10px;
+}
