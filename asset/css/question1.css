@@ -1,0 +1,29 @@
+#header {
+  background-color: yellow;
+  text-align: center;
+}
+
+#body {
+  display: flex;
+}
+
+#left {
+  width: 200px;
+}
+
+#middle {
+  border-left: 2px solid green;
+  width: 900px;
+  padding: 0px 10px;
+}
+
+#right {
+  border: 3px dotted green;
+  height: 150px;
+  padding: 10px;
+  align-self: right;
+}
+
+#footer {
+  text-align: center;
+}
