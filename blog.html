@@ -43,19 +43,75 @@
                         }
                 </code>
             </p>
+            <h6>February 1 2021</h6>
+        </div>
+
+        <div class="question">
+            <h2>How Grid Layout Works in CSS3</h2>
+            <p>CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives.</p>
+            <p>Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts are either possible or easier with CSS grid than they were with tables. For example, a grid container's child elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.</p>
+            <h3>Example</h3>
+            <p>The example below shows a three-column track grid with new rows created at a minimum of 100 pixels and a maximum of auto. Items have been placed onto the grid using line-based placement.</p>
+            <h3>HTML</h3>
+            <p class="code">
+                <code>
+                        < div class="wrapper"> <br>
+                        < div class="one">One</ div><br>
+                        < div class="two">Two</ div><br>
+                        < div class="three">Three</ div><br>
+                        < div class="four">Four</ div><br>
+                        < div class="five">Five</ div><br>
+                        < div class="six">Six</ div><br>
+                      </ div>
+                </code>     
+            </p>
+            <h3>CSS</h3>
+            <p class="code">
+                <code>
+                    .wrapper {  <br>
+                        display: grid; <br>
+                        grid-template-columns: repeat(3, 1fr); <br>
+                        gap: 10px; <br>
+                        grid-auto-rows: minmax(100px, auto); <br>
+                      } <br>
+                      .one { <br>
+                        grid-column: 1 / 3; <br>
+                        grid-row: 1; <br>
+                      } <br>
+                      .two { <br>
+                        grid-column: 2 / 4; <br>
+                        grid-row: 1 / 3; <br>
+                      } <br>
+                      .three { <br>
+                        grid-column: 1; <br>
+                        grid-row: 2 / 5; <br>
+                      } <br>
+                      .four { <br>
+                        grid-column: 3; <br>
+                        grid-row: 3; <br>
+                      } <br>
+                      .five {
+                        grid-column: 2; <br>
+                        grid-row: 4; <br>
+                      } <br>
+                      .six { <br>
+                        grid-column: 3; <br>
+                        grid-row: 4; <br>
+                      } <br>
+                </code>
+            </p>
             <h6>February 2 2021</h6>
         </div>
 
         <div class="question">
-            <h2></h2>
-            <p></p>
-            <h6></h6>
-        </div>
-
-        <div class="question">
-            <h2></h2>
-            <p></p>
-            <h6></h6>
+            <h2>Difference between flex layout and grid layout </h2>
+            <p>The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time. The two specifications share some common features, however, and if you have already learned how to use flexbox, the similarities should help you get to grips with Grid.</p>
+            <p>Flexbox can optionally wrap. If we allow a flex container to wrap, they will wrap down onto another row when the flex items fill a row. Where they line up on the next row is independent of what happenned on the first row, allowing for a masonry-like look.            </p>
+            <p>Grid can also optionally wrap (if we allow auto filling) in the sense that items can fill a row and move to the new row (or auto place themselves), but as they do, they will fall along the same grid lines all the other elements do.            </p>
+            <p>You could think of flexbox as “one dimensional.” While flexbox can make rows and columns in the sense that it allows elements to wrap, there’s no way to declaratively control where elements end up since the elements merely push along a single axis and then wrap or not wrap accordingly. They do as they do, if you will, along a one-dimensional plane and it’s because of that single dimension that we can optionally do things, like align elements along a baseline — which is something grid is unable to do.</p>
+            <p>You could think of grid as “two dimensional“ in that we can (if we want to) declare the sizing of rows and columns and then explicitly place things into both rows and columns as we choose.</p>
+            <p>Grid is better at overlapping. Getting elements to overlap in flexbox requires looking at traditional stuff, like negative margins, transforms, or absolute positioning in order to break out of the flex behavior. With grid, we can place items on overlapping grid lines, or even right within the same exact grid cells.</p>
+            <h6>February 3 2021</h6>
         </div>
     </div>
 
