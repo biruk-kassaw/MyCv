@@ -1,0 +1,27 @@
+div #wrapper {
+}
+div .question {
+  width: 700px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+h2 {
+  color: brown;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+h6 {
+  text-align: right;
+}
+
+.code {
+  background-color: rgb(180, 180, 180);
+  padding: 10px;
+  border-radius: 15px;
+}

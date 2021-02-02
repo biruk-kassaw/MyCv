@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./asset/css/blog.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a> | 
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="myworks.html">My Works</a>
+        <a href="blog.html">Blog</a>
+    </div>
+    <div id="wrapper">
+        <div class="question">
+            <h2>Difference between Pseudo Elements and Pseudo Class Selectors</h2>
+            <h3>Pseudo Class Selectors</h3>
+
+            <p>A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to apply a style when the user hovers over a button.</p>
+            <p>The original pseudo-class defined dynamic states of an element that are entered and exited over time, or through user intervention. CSS2 expanded on this concept to include virtual conceptual document components or inferred portions of the document tree e.g. first-child. Pseudo-classes operate as if phantom classes were added to various elements.</p>
+            <p>RESTRICTIONS: Unlike pseudo-elements, pseudo-classes can appear anywhere in selector chain.</p>
+            <p class="code">
+                <code>
+                    div:hover {<br>
+                        background-color: #fasB4D;<br>
+                      }
+                </code>
+            </p>
+            
+            <h3>Pseudo Elements</h3>
+            <p>A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, ::first-line can be used to style the first line of a paragraph.</p>
+            <p>RESTRICTIONS: Pseudo-elements may only be applied to external and document-level contexts - not to in-line styles. Pseudo-elements are restricted in where they can appear in a rule. They may only appear at the end of a selector chain (after the subject of the selector). They should come after any class or ID names found in the selector. Only one pseudo-element can be specified per selector. To address multiple pseudo-elements on a single element structure, multiple style selector/declaration statements must be made.</p>
+            <p class="code">
+                <code>
+                    /* The first line of every p element. */
+                        p::first-line { <br>
+                         color: blue; <br>
+                         text-transform: uppercase;<br>
+                        }
+                </code>
+            </p>
+            <h6>February 2 2021</h6>
+        </div>
+
+        <div class="question">
+            <h2></h2>
+            <p></p>
+            <h6></h6>
+        </div>
+
+        <div class="question">
+            <h2></h2>
+            <p></p>
+            <h6></h6>
+        </div>
+    </div>
+
+</body>
+</html>
