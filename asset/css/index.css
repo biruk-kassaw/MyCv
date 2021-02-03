@@ -63,3 +63,35 @@ div#topImageContainer .image img {
   color: brown;
   padding-left: 30px;
 }
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  padding 10px;
+  background-color: rgb(15, 13, 13);
+  color: beige;
+}
+
+#leftFooter {
+  display: flex;
+  border-right: 1px solid beige;
+}
+
+.footerParts {
+  margin: 30px;
+}
+
+.footerParts p {
+  font-size: 12px;
+}
+
+#email {
+  border: 0px;
+  border-radius: 10px;
+  height: 30px;
+  width: 300px;
+}
+
+#rightFooter {
+  display: flex;
+}
